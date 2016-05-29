@@ -17,11 +17,11 @@ export default class PeopleList extends React.Component{
       );
     });*/
     return(
-      <ul>
+      <ol>
         {this.props.peoples.map(function(people){
               return <PeopleFrame key = {people.login.username} people = {people}/>
         })}
-      </ul>
+      </ol>
     );
   }
 }
